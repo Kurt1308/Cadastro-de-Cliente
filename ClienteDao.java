@@ -62,9 +62,6 @@ public class ClienteDao {
             st.setDouble(5, cliente.getTelefone());
             st.setString(6, cliente.getBairro());
             
-            //String inserir;
-            //Valores double ou int etc só utilizam aspas duplas.
-            //inserir = "INSERT INTO cliente VALUES('" +cliente.getMatricula()+ "', '" +cliente.getNome()+ "', '" +cliente.getEmail()+ "', '" +cliente.getCell()+ "', " +cliente.getTelefone()+ ", '" +cliente.getBairro()+ "')";
             status = st.executeUpdate();
             //status = st.executeUpdate(inserir);
             return status; //retorna o valor 1
